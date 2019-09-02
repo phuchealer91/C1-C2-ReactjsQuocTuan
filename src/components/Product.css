@@ -1,0 +1,99 @@
+html{
+    font-size: 62.5%;
+}
+
+.product-list{
+    border: 1px solid lightgreen;
+}
+.product-left{
+    display: flex;
+}
+.product-img{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.product-img img{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-img .hot{
+    position: absolute;
+  background: rgb(212, 54, 27);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 5rem;
+    text-align: center;
+    color: white;
+
+}
+.card-body{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+.card-title a{
+    text-decoration: none;
+}
+.card-title .card-name{
+    font-size: 2.5rem;
+    display: block;
+    padding: .5rem 0;
+}
+.card-title .card-detail{
+    font-size: 1.2rem;
+    display: block;
+    padding: .5rem 0;
+    color: rgb(109, 101, 101);
+}
+.card-body .price{
+    font-size: 2.5rem;
+    color: rgb(6, 6, 153);
+    padding: .5rem 0;
+    border-bottom: 1px solid #ddd;
+
+}
+.card-body .card-text{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.card-body .btn{
+    font-size: 1.5rem;
+}
+.card-body .rate-star{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.card-body .rate-star .fa{
+    color: rgb(245, 188, 0);
+}
+.modal{
+    font-size: 2rem;
+}
+.btn-group button{
+    font-size: 1.5rem;
+}
+.btn-group {
+    display: block;
+    margin: 2rem auto;
+}
+
+.btn-group input{
+    padding: .5rem;
+    display: block;
+    width: 100%;
+    /* width: 100%; */
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.btns button{
+    margin: 1 auto;
+}
+
