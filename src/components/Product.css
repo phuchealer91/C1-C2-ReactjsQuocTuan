@@ -96,4 +96,7 @@ html{
 .btns button{
     margin: 1 auto;
 }
+label{
+    font-size: 1.5rem;
+}
 

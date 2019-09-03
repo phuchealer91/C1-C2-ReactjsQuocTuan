@@ -18,6 +18,7 @@ class Product extends React.Component {
     this.onShowSave = this.onShowSave.bind(this);
     this.renderOnClick = this.renderOnClick.bind(this);
     this.showDelete = this.showDelete.bind(this);
+    // this.onAddNewItem = this.onAddNewItem.bind(this);
   }
     
 isStatus(){
@@ -29,7 +30,19 @@ isStatus(){
     return price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
   }
 
-  //button edit
+  // //button edit
+  //  //button edit
+  //  showadd = () =>{
+  //   this.setState({
+  //     showStatus: true
+  //   })
+  // }
+  // //button save
+  // showsave = () =>{
+  //   this.setState({
+  //     showStatus: false
+  //   })
+  // }
   showEdit = () =>{
     this.setState({
       showStatus: true
@@ -71,7 +84,43 @@ isStatus(){
   onAddComponents = ()=>{
     this.props.onAddComponent(this.props.index);
   }
+  onAddNewItemss = ()=>{
+    this.props.onAddNewItemss();
+  }
   
+
+
+
+
+
+
+// //render save
+// onAddNewSave = ()=>{
+//   return <div className="btn-group">
+//   <button type="button" className="btn btn-danger" onClick={this.showadd}>Add</button>
+// </div>
+// }
+// renderOnClicks = ()=>{
+//   if(this.state.showStatus === false){
+//     return this.onAddNewSave();
+//   }
+//   else return this.onAddNewItem();
+// }
+// onAddNewItem = ()=>{
+//   return <div className="col-sm-12 col-md-12 m-auto p-0">
+//           <div className="btn-group">
+//             <label>Name</label>
+//           <input type="text"  ref={(input)=> {this.text = input}}/>
+//             <label>Price</label>
+//           <input type="text"  ref={(node)=> {this.text2 = node}}/>
+//           <button type="button" className="btn btn-primary ml-2" onClick={this.showsave}>Save</button>
+//         {/* <button type="button" className="btn btn-primary" >Save</button> */}
+//         </div>
+//         </div>
+// }
+
+
+
   render() {
     const styles={fontSize: '1.5rem'}
     const {children,price} = this.props;
@@ -81,7 +130,7 @@ isStatus(){
           <div className="row">
             <div className="col-sm-12 col-md-5 col-lg-5 product-left">
               <div className="product-img">
-                <img alt ="girl "src="https://sohanews.sohacdn.com/thumb_w/660/2017/photo-4-1509012560460-0-0-409-660-crop-1509012656515.jpg" />
+                <img alt ="girl "src={this.props.image} />
                 {this.isStatus()}
               </div>
             </div>
